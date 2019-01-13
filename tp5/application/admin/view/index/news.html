@@ -1,0 +1,78 @@
+{include file='public/header' /}
+
+<div id="page-wrapper" style="padding-top: 40px;">
+    <div class="row" style="border-bottom: 1px solid #eee;">
+        <h2 class="page-header col-sm-4" style="display: inline-block;margin-left: 11%;border-bottom: 0px solid #eee;">消息通知</h2>
+        <div style="float: right;margin-right: 17%">
+        <a href="/tp5/public/admin/index/news?type=1"><button>操作类</button></a>
+        <a href="/tp5/public/admin/index/news?type=0"><button>阅读类</button></a>
+        </div>
+    </div>
+    <ul class="dropdown-messages" style="list-style: none;width: 70%;margin:auto;">
+        {volist name="mess" id="one"}
+        {if $one.is_operation}
+        <li style="padding: 10px; border-bottom: 2px solid #CCCCCC;padding-bottom: 20px;">
+            <div>
+                <strong>{$one.main1}</strong>
+                <span class="pull-right text-muted">
+                    <em>{$one.time}</em>
+                </span>
+            </div>
+            <div style="text-indent: 2em;margin-top: 8px;">为{$one.action}用户，所属网点{$one.point}</div>
+            <div style="margin-top: 20px; text-align: right;">
+                {if condition="$one.is_action eq 1"}
+                <a href="/tp5/public/admin/index/deletenews?main1={$one.main1}&time={$one.time}"><button class="btn btn-danger" style="height: 30px;">删除</button></a>&nbsp;
+                <button class="btn btn-toolbar" style="height: 30px;">同意</button>&nbsp;
+                <button class="btn btn-toolbar" style="height: 30px;">驳回</button>
+                {else}
+                <a href="/tp5/public/admin/index/deletenews?main1={$one.main1}&time={$one.time}"><button class="btn btn-danger" style="height: 30px;">删除</button></a>&nbsp;
+                <a href="/tp5/public/admin/index/through?loginname={$one.main1}"><button class="btn btn-success" style="height: 30px;">同意</button></a>
+                <a href="/tp5/public/admin/index/back?loginname={$one.main1}"><button class="btn btn-danger" style="height: 30px;">驳回</button></a>
+                {/if}
+            </div>
+        </li>
+        {else}
+        <li style="padding: 10px; border-bottom: 2px solid #CCCCCC;padding-bottom: 20px;">
+            <div>
+                <strong>{$one.main1}</strong>
+                <span class="pull-right text-muted">
+                    <em>{$one.time}</em>
+                </span>
+            </div>
+            {if condition="$role eq 1"}
+            {if condition="$one.is_see_role1 eq 1"}
+            <div style="text-indent: 2em;margin-top: 8px;">{$one.action} => {$one.main2}
+                <p style="float: right;"><a href="/tp5/public/admin/index/deletenews?main1={$one.main1}&time={$one.time}">删除</a></p>
+                <p style="float: right;color: #CCCCCC;">已查看</p>
+            </div>
+            {else}
+            <div style="text-indent: 2em;margin-top: 8px;">{$one.action} => {$one.main2}
+                <p style="float: right;"><a href="/tp5/public/admin/index/deletenews?main1={$one.main1}&time={$one.time}">删除</a></p>
+            </div>
+            {/if}
+            {elseif condition="$role eq 2"}
+            {if condition="$one.is_see_role2 eq 1"}
+            <div style="text-indent: 2em;margin-top: 8px;">{$one.action} => {$one.main2}
+                <p style="float: right;"><a href="/tp5/public/admin/index/deletenews?main1={$one.main1}&time={$one.time}">删除</a></p>
+                <p style="float: right;color: #CCCCCC;">已查看</p>
+            </div>
+            {else}
+            <div style="text-indent: 2em;margin-top: 8px;">{$one.action} => {$one.main2}
+                <p style="float: right;"><a href="/tp5/public/admin/index/deletenews?main1={$one.main1}&time={$one.time}">删除</a></p>
+            </div>
+            {/if}
+            {elseif condition="$role eq 3"}
+            <div style="text-indent: 2em;margin-top: 8px;">{$one.action} => {$one.main2}
+                <p style="float: right;"><a href="/tp5/public/admin/index/deletenews?main1={$one.main1}&time={$one.time}">删除</a></p>
+                <p style="float: right;color: #CCCCCC;">已查看</p>
+            </div>
+            {/if}
+        </li>
+        {/if}
+        {/volist}
+    </ul>
+</div>
+
+
+
+{include file='public/bottom' /}

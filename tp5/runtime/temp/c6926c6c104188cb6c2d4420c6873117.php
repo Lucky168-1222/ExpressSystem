@@ -1,0 +1,60 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"/opt/lampp/htdocs/tp5/public/../application/index/view/forget/index.html";i:1529051547;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎使用速运Cyan</title>
+</head>
+<link href="/tp5/public/static/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="/tp5/public/static/css/main.css" type="text/css" rel="stylesheet">
+<body>
+<script>
+    function changeCode(){
+        document.getElementById("img").src="http://www.wubapai.com/verifycode/get?tockenId=QWERTYUISDFGHJEW?"+Math.random();
+    }
+</script>
+<div class="login">
+    <div class="box png">
+        <div class="logo png"></div>
+        <form role="form" action="<?php echo url('forget/changepwd'); ?>" method="post">
+            <div class="input">
+                <div class="log">
+                    <div class="name">
+                        <label>手机号</label><input type="text" class="text" id="phone" name="phone" placeholder="账号绑定的手机号" tabindex="1">
+                    </div>
+                    <div class="name">
+                        <input type="text" style="width: 140px; margin-left: 70px; font-size: 12px; float: left; margin-right: 10px;height: 25px" class="form-control" id="ercode" placeholder="验证码">
+                        <img onclick="changeCode();" src="http://www.wubapai.com/verifycode/get?tockenId=QWERTYUISDFGHJEW" id="img" width="60px" height="25px"/>
+                        <!--<label><button style="height: 25px; padding: 4px; font-size: 12px;" type="submit" class="btn btn-default" id="getcode">获取验证码</button></label>-->
+                    </div>
+                    <div class="pwd">
+                        <label>新密码</label><input type="password" class="text" name="pwd1" id="pwd1" placeholder="新密码" tabindex="2">
+                    </div>
+                    <div class="pwd">
+                        <label>确&nbsp;&nbsp;&nbsp;&nbsp; 认</label><input type="password" class="text" name="pwd2" id="pwd2" placeholder="确认密码" tabindex="2">
+                        <input type="submit" class="submit" tabindex="3" id="login" value="提交">
+                        <label><button style="height: 34px; width: 62px; padding: 4px; font-size: 14px;" class="btn btn-warning" id="getcode"><a href="/tp5/public/index/login">返回</a></button></label>
+                        <div class="check"></div>
+                    </div>
+                    <div class="tip"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="air-balloon ab-1 png"></div>
+    <div class="air-balloon ab-2 png"></div>
+    <div class="footer"></div>
+</div>
+
+<script type="text/javascript" src="/tp5/public/static/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/tp5/public/static/js/fun.base.js"></script>
+<script type="text/javascript" src="/tp5/public/static/js/script.js"></script>
+
+
+<!--[if IE 6]>
+<script src="/tp5/public/static/js/DD_belatedPNG.js" type="text/javascript"></script>
+<script>DD_belatedPNG.fix('.png')</script>
+<![endif]-->
+
+</body>
+</html>

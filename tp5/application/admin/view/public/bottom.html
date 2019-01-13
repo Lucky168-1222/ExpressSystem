@@ -1,0 +1,120 @@
+
+<!-- jQuery -->
+<script src="/tp5/public/static/css/vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/tp5/public/static/css/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="/tp5/public/static/css/vendor/metisMenu/metisMenu.min.js"></script>
+
+<!-- Morris Charts JavaScript -->
+<!--<script src="/tp5/public/static/css/vendor/raphael/raphael.min.js"></script>-->
+<!--<script src="/tp5/public/static/css/vendor/morrisjs/morris.min.js"></script>-->
+<!--<script src="/tp5/public/static/js/morris-data.js"></script>-->
+
+<!-- Custom Theme JavaScript -->
+<script src="/tp5/public/static/js/dist/js/sb-admin-2.js"></script>
+
+
+<!-- /#wrapper -->
+<script src="/tp5/public/static/js/hightcharts.js"></script>
+<script src="/tp5/public/static/js/exporting.js"></script>
+<script src="/tp5/public/static/js/hightchartscn.js"></script>
+<script src="/tp5/public/static/js/drilldown.js"></script>
+<script>
+
+    function w(){
+        var a=$('.emgao').text();var b=$('.empoint').text();var c=$('.em').text();
+    var chat=Highcharts.chart('emcontainner', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'cyan速运员工情况'
+        },
+        xAxis: {
+            type: 'category'
+        },
+        yAxis: {
+            title: {
+                text: '员工人数'
+            }
+        },
+        legend: {
+            enabled: false
+        },
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.y:.1f}%'
+                }
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+        },
+        series: [{
+            name: 'cyan速运员工',
+            colorByPoint: true,
+            data: [{
+                name: '高层管理',
+                y: parseFloat(parseInt(a)/(parseInt(a)+parseInt(b)+parseInt(c))*100)
+            }, {
+                name: '网点管理人',
+                y: parseFloat(parseInt(b)/(parseInt(a)+parseInt(b)+parseInt(c))*100)
+            }, {
+                name: '普通员工',
+                y: parseFloat(parseInt(c)/(parseInt(a)+parseInt(b)+parseInt(c))*100)
+            }]
+        }]
+    });
+    }
+</script>
+<script>
+    function ok(){
+        var a=$('.exall').text();var b=$('.exing').text();var c=$('.expro').text();
+    var chart = Highcharts.chart('container', {
+        title: {
+            text: 'cyan速运快件情况展示'
+        },
+        tooltip: {
+            headerFormat: '{series.name}<br>',
+            pointFormat: '{point.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false
+                },
+                showInLegend: true // 设置饼图是否在图例中显示
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'cyan速运快件',
+            data: [
+                ['进行中快件',   parseFloat(parseInt(a)/(parseInt(a)+parseInt(b)+parseInt(c))*100)],
+                ['已完成快件',   parseFloat(parseInt(b)/(parseInt(a)+parseInt(b)+parseInt(c))*100)],
+                ['问题快件',    parseFloat(parseInt(c)/(parseInt(a)+parseInt(b)+parseInt(c))*100)]
+            ]
+        }]
+    });
+
+
+
+
+    }
+</script>
+
+
+<script src="/tp5/public/static/js/myjs/myjs.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+{include file='public/header' /}
+
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header">快件管理->录入快件</h2>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a href="index.html">快件列表</a> >> <a href="#">快件揽入</a>
+                </div>
+                <form role="form" method="post" action="{:url('express/addexpress')}" name="addexpress">
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <table width="100%" class="table table-striped table-bordered table-hover">
+                        <tbody>
+                        <tr>
+                            <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">快件单号</td>
+                            <td style="background: #fff">
+                                <input name="expressnumber" style="width: 200px;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">寄件人姓名</td>
+                            <td style="background: #fff">
+                                <input name="postname" style="width: 200px;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">寄件人电话</td>
+                            <td style="background: #fff">
+                                <input name="postphone" style="width: 200px;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">寄件人地址</td>
+                            <td style="background: #fff">
+                                <input name="postaddress" style="width: 200px;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">收件人姓名</td>
+                            <td style="background: #fff">
+                                <input name="receivename" style="width: 200px;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">收件人电话</td>
+                            <td style="background: #fff">
+                                <input name="receivephone" style="width: 200px;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">收件人地址</td>
+                            <td style="background: #fff">
+                                <input name="receiveaddress" style="width: 200px;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">收件价格</td>
+                            <td style="background: #fff">
+                                <input name="price" style="width: 200px;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">快件负责人</td>
+                            <td style="background: #fff">
+                                <input name="principalname" style="width: 200px;" value="{$uname}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">寄件网点</td>
+                            <td style="background: #fff">
+                                <input name="postpoint" id="postpoint" style="width: 200px;" value="{$point}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">当前网点</td>
+                            <td style="background: #fff">
+                                <input name="currentpoint" style="width: 200px;" value="{$point}"/>
+                            </td>
+                        </tr>
+                        <!--快件为出仓时才可以显示下一站选择-->
+                        <tr>
+                            <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">快件下一站</td>
+                            <td style="background: #fff">
+                                <select name="nextpoint" id="nextpoint">
+                                    <option value="0" selected>-请选择下一站点-</option>
+                                    {volist name="points" id="point"}
+                                    <option value={$point.name}>{$point.name}</option>
+                                    {/volist}
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">快件状态</td>
+                            <td style="background: #fff">
+                                <select name="exstatus" id="exstatus">
+                                    <option value="0" selected>-请选择快件状态-</option>
+                                    <option value="1">已入仓</option>
+                                    <option value="2">已出仓</option>
+                                    <option value="3">派件中</option>
+                                    <option value="4">已完成</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">备注信息</td>
+                            <td style="background: #fff">
+                                <textarea name="description"  rows="5" cols="50"></textarea>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <input type="submit" class="btn btn-success col-sm-2" style="display: inline-block; float: right;margin-top:20px;margin-bottom: 20px; margin-right: 22%" />
+                <button class="btn btn-danger col-sm-offset-3 col-sm-2" style="margin-top:20px;margin-bottom: 20px;"><a style="color: #fff;" href="/tp5/public/admin/express/index">取消</a></button>
+                <!-- /.panel-body -->
+                </form>
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+
+</div>
+
+
+
+</div>
+<!-- /#wrapper -->
+
+{include file='public/bottom' /}

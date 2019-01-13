@@ -1,0 +1,747 @@
+---------------------------------------------------------------
+[ 2018-06-15T15:53:35+08:00 ] 127.0.0.1 GET /tp5/public/
+[ info ] 127.0.0.1/tp5/public/ [运行时间：0.048917s][吞吐率：20.44req/s] [内存消耗：2,243.53kb] [文件加载：50]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/XAMPP/xamppfiles/htdocs/tp5/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/tp5/public/../application/index/view/index/index.html [ array (
+  0 => 'history',
+  1 => 'number',
+  2 => 'desc',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001445s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.008906s ]
+[ sql ] [ SQL ] SELECT `description` FROM `company` [ RunTime:0.000941s ]
+---------------------------------------------------------------
+[ 2018-06-15T15:53:39+08:00 ] 127.0.0.1 GET /tp5/public/index/login
+[ info ] 127.0.0.1/tp5/public/index/login [运行时间：0.016527s][吞吐率：60.51req/s] [内存消耗：1,565.94kb] [文件加载：43]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ /Applications/XAMPP/xamppfiles/htdocs/tp5/application/index/controller/Login.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/tp5/public/../application/index/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-15T15:53:47+08:00 ] 127.0.0.1 POST /tp5/public/index/login/dologin.html
+[ info ] 127.0.0.1/tp5/public/index/login/dologin.html [运行时间：0.028942s][吞吐率：34.55req/s] [内存消耗：2,308.84kb] [文件加载：51]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '29',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'userpwd' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->doLogin[ /Applications/XAMPP/xamppfiles/htdocs/tp5/application/index/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000814s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.002896s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.001304s ]
+---------------------------------------------------------------
+[ 2018-06-15T15:53:47+08:00 ] 127.0.0.1 GET /tp5/public/admin.html
+[ info ] 127.0.0.1/tp5/public/admin.html [运行时间：0.040744s][吞吐率：24.54req/s] [内存消耗：2,427.50kb] [文件加载：52]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /Applications/XAMPP/xamppfiles/htdocs/tp5/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/tp5/public/../application/admin/view/index/index.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'messnum',
+  3 => 'point_list',
+  4 => 'username',
+  5 => 'express_all',
+  6 => 'express_ispro',
+  7 => 'employee_all',
+  8 => 'point_all',
+  9 => 'money_all',
+  10 => 'express_ok',
+  11 => 'express_ing',
+  12 => 'express_pro',
+  13 => 'admin',
+  14 => 'principal',
+  15 => 'normal',
+  16 => 'keyword',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000478s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.002483s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.002398s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `is_see_role1` = 0 LIMIT 1 [ RunTime:0.001207s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.002534s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `express` [ RunTime:0.002454s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `express` WHERE  `isproexpress` = 0 LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `express` WHERE  `isproexpress` = 1 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `employee` WHERE  `isStay` = 1 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `point` LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] select sum(price) as money_all from express where status=4 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `express` WHERE  `isproexpress` = 0  AND `status` = 4 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `employee` WHERE  `role` = 1 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `employee` WHERE  `role` = 2 LIMIT 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `employee` WHERE  `role` = 3 LIMIT 1 [ RunTime:0.000339s ]
+---------------------------------------------------------------
+[ 2018-06-15T15:54:34+08:00 ] 127.0.0.1 GET /tp5/public/admin/index/news
+[ info ] 127.0.0.1/tp5/public/admin/index/news [运行时间：0.031072s][吞吐率：32.18req/s] [内存消耗：2,320.22kb] [文件加载：51]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->news[ /Applications/XAMPP/xamppfiles/htdocs/tp5/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/tp5/public/../application/admin/view/index/news.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'messnum',
+  3 => 'mess',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000624s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.002336s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.002289s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `is_see_role1` = 0 LIMIT 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SELECT * FROM `news` ORDER BY time desc [ RunTime:0.000355s ]
+[ sql ] [ SQL ] UPDATE `news`  SET `is_see_role1`=1  WHERE  `is_operation` = 0  AND `is_see_role1` = 0 [ RunTime:0.000600s ]
+---------------------------------------------------------------
+[ 2018-06-15T15:54:43+08:00 ] 127.0.0.1 GET /tp5/public/admin/index/through?loginname=qiaoxin
+[ info ] 127.0.0.1/tp5/public/admin/index/through?loginname=qiaoxin [运行时间：0.031702s][吞吐率：31.54req/s] [内存消耗：2,268.19kb] [文件加载：51]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'through',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/index/news',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'loginname' => 'qiaoxin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->through[ /Applications/XAMPP/xamppfiles/htdocs/tp5/application/admin/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000639s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.002237s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.002114s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `is_see_role1` = 0 LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] UPDATE `employee`  SET `isformal`=1  WHERE  `loginname` = 'qiaoxin' [ RunTime:0.000663s ]
+[ sql ] [ SQL ] UPDATE `news`  SET `is_see_role1`=1  WHERE  `main1` = 'qiaoxin'  AND `action` = '注册' [ RunTime:0.000502s ]
+---------------------------------------------------------------
+[ 2018-06-15T15:54:43+08:00 ] 127.0.0.1 GET /tp5/public/admin/index/news
+[ info ] 127.0.0.1/tp5/public/admin/index/news [运行时间：0.032120s][吞吐率：31.13req/s] [内存消耗：2,320.23kb] [文件加载：51]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/index/news',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->news[ /Applications/XAMPP/xamppfiles/htdocs/tp5/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/tp5/public/../application/admin/view/index/news.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'messnum',
+  3 => 'mess',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000564s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.002529s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.002188s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `is_see_role1` = 0 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `news` ORDER BY time desc [ RunTime:0.000348s ]
+[ sql ] [ SQL ] UPDATE `news`  SET `is_see_role1`=1  WHERE  `is_operation` = 0  AND `is_see_role1` = 0 [ RunTime:0.000372s ]
+---------------------------------------------------------------
+[ 2018-06-15T15:54:44+08:00 ] 127.0.0.1 GET /tp5/public/admin/index/through?loginname=qiaoxin
+[ info ] 127.0.0.1/tp5/public/admin/index/through?loginname=qiaoxin [运行时间：0.030817s][吞吐率：32.45req/s] [内存消耗：2,268.19kb] [文件加载：51]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'through',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/index/news',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'loginname' => 'qiaoxin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->through[ /Applications/XAMPP/xamppfiles/htdocs/tp5/application/admin/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000439s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.003496s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.003184s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `is_see_role1` = 0 LIMIT 1 [ RunTime:0.000939s ]
+[ sql ] [ SQL ] UPDATE `employee`  SET `isformal`=1  WHERE  `loginname` = 'qiaoxin' [ RunTime:0.001633s ]
+[ sql ] [ SQL ] UPDATE `news`  SET `is_see_role1`=1  WHERE  `main1` = 'qiaoxin'  AND `action` = '注册' [ RunTime:0.000652s ]
+---------------------------------------------------------------
+[ 2018-06-15T15:54:44+08:00 ] 127.0.0.1 GET /tp5/public/admin/index/news
+[ info ] 127.0.0.1/tp5/public/admin/index/news [运行时间：0.029503s][吞吐率：33.89req/s] [内存消耗：2,320.23kb] [文件加载：51]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/index/news',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->news[ /Applications/XAMPP/xamppfiles/htdocs/tp5/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/tp5/public/../application/admin/view/index/news.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'messnum',
+  3 => 'mess',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000429s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.002406s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.002891s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `is_see_role1` = 0 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `news` ORDER BY time desc [ RunTime:0.000376s ]
+[ sql ] [ SQL ] UPDATE `news`  SET `is_see_role1`=1  WHERE  `is_operation` = 0  AND `is_see_role1` = 0 [ RunTime:0.000260s ]
+---------------------------------------------------------------
+[ 2018-06-15T15:54:44+08:00 ] 127.0.0.1 GET /tp5/public/admin/index/through?loginname=qiaoxin
+[ info ] 127.0.0.1/tp5/public/admin/index/through?loginname=qiaoxin [运行时间：0.027462s][吞吐率：36.41req/s] [内存消耗：2,268.19kb] [文件加载：51]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'through',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/index/news',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'loginname' => 'qiaoxin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->through[ /Applications/XAMPP/xamppfiles/htdocs/tp5/application/admin/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000592s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.003928s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.002768s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `is_see_role1` = 0 LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] UPDATE `employee`  SET `isformal`=1  WHERE  `loginname` = 'qiaoxin' [ RunTime:0.000731s ]
+[ sql ] [ SQL ] UPDATE `news`  SET `is_see_role1`=1  WHERE  `main1` = 'qiaoxin'  AND `action` = '注册' [ RunTime:0.000651s ]
+---------------------------------------------------------------
+[ 2018-06-15T15:54:44+08:00 ] 127.0.0.1 GET /tp5/public/admin/index/news
+[ info ] 127.0.0.1/tp5/public/admin/index/news [运行时间：0.029233s][吞吐率：34.21req/s] [内存消耗：2,320.23kb] [文件加载：51]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/index/news',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->news[ /Applications/XAMPP/xamppfiles/htdocs/tp5/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/tp5/public/../application/admin/view/index/news.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'messnum',
+  3 => 'mess',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000589s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.002847s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.002241s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `is_see_role1` = 0 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `news` ORDER BY time desc [ RunTime:0.000372s ]
+[ sql ] [ SQL ] UPDATE `news`  SET `is_see_role1`=1  WHERE  `is_operation` = 0  AND `is_see_role1` = 0 [ RunTime:0.000273s ]
+---------------------------------------------------------------
+[ 2018-06-15T15:54:45+08:00 ] 127.0.0.1 GET /tp5/public/admin/index/through?loginname=qiaoxin
+[ info ] 127.0.0.1/tp5/public/admin/index/through?loginname=qiaoxin [运行时间：0.028600s][吞吐率：34.97req/s] [内存消耗：2,268.19kb] [文件加载：51]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'through',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/index/news',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'loginname' => 'qiaoxin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->through[ /Applications/XAMPP/xamppfiles/htdocs/tp5/application/admin/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000445s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.003227s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.003820s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `is_see_role1` = 0 LIMIT 1 [ RunTime:0.000801s ]
+[ sql ] [ SQL ] UPDATE `employee`  SET `isformal`=1  WHERE  `loginname` = 'qiaoxin' [ RunTime:0.000618s ]
+[ sql ] [ SQL ] UPDATE `news`  SET `is_see_role1`=1  WHERE  `main1` = 'qiaoxin'  AND `action` = '注册' [ RunTime:0.000610s ]
+---------------------------------------------------------------
+[ 2018-06-15T15:54:45+08:00 ] 127.0.0.1 GET /tp5/public/admin/index/news
+[ info ] 127.0.0.1/tp5/public/admin/index/news [运行时间：0.025917s][吞吐率：38.58req/s] [内存消耗：2,320.23kb] [文件加载：51]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/index/news',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->news[ /Applications/XAMPP/xamppfiles/htdocs/tp5/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/tp5/public/../application/admin/view/index/news.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'messnum',
+  3 => 'mess',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000544s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.002275s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.002271s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `is_see_role1` = 0 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `news` ORDER BY time desc [ RunTime:0.000400s ]
+[ sql ] [ SQL ] UPDATE `news`  SET `is_see_role1`=1  WHERE  `is_operation` = 0  AND `is_see_role1` = 0 [ RunTime:0.000300s ]
+---------------------------------------------------------------
+[ 2018-06-15T15:58:04+08:00 ] 127.0.0.1 GET /tp5/public/admin/index/news
+[ info ] 127.0.0.1/tp5/public/admin/index/news [运行时间：0.032861s][吞吐率：30.43req/s] [内存消耗：2,476.44kb] [文件加载：53]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/index/news',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->news[ /Applications/XAMPP/xamppfiles/htdocs/tp5/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/tp5/public/../application/admin/view/index/news.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'messnum',
+  3 => 'mess',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000680s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.003593s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.002339s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `is_see_role1` = 0 LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT * FROM `news` ORDER BY time desc [ RunTime:0.000393s ]
+[ sql ] [ SQL ] UPDATE `news`  SET `is_see_role1`=1  WHERE  `is_operation` = 0  AND `is_see_role1` = 0 [ RunTime:0.000328s ]
+---------------------------------------------------------------
+[ 2018-06-15T15:58:56+08:00 ] 127.0.0.1 GET /tp5/public/admin/index/news
+[ info ] 127.0.0.1/tp5/public/admin/index/news [运行时间：0.027964s][吞吐率：35.76req/s] [内存消耗：2,320.48kb] [文件加载：51]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/index/news',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->news[ /Applications/XAMPP/xamppfiles/htdocs/tp5/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/tp5/public/../application/admin/view/index/news.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'messnum',
+  3 => 'mess',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000624s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.002201s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.002030s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `is_see_role1` = 0 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `news` ORDER BY time desc [ RunTime:0.000330s ]
+[ sql ] [ SQL ] UPDATE `news`  SET `is_see_role1`=1  WHERE  `is_operation` = 0  AND `is_see_role1` = 0 [ RunTime:0.000296s ]
+---------------------------------------------------------------
+[ 2018-06-15T15:58:58+08:00 ] 127.0.0.1 GET /tp5/public/admin/index/news
+[ info ] 127.0.0.1/tp5/public/admin/index/news [运行时间：0.029336s][吞吐率：34.09req/s] [内存消耗：2,320.48kb] [文件加载：51]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/index/news',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->news[ /Applications/XAMPP/xamppfiles/htdocs/tp5/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/tp5/public/../application/admin/view/index/news.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'messnum',
+  3 => 'mess',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000422s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.003235s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.002345s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `is_see_role1` = 0 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `news` ORDER BY time desc [ RunTime:0.000477s ]
+[ sql ] [ SQL ] UPDATE `news`  SET `is_see_role1`=1  WHERE  `is_operation` = 0  AND `is_see_role1` = 0 [ RunTime:0.000354s ]
+---------------------------------------------------------------
+[ 2018-06-15T15:59:05+08:00 ] 127.0.0.1 GET /tp5/public/static/css/vendor/bootstrap/css/bootstrap.min.css.map
+[ info ] 127.0.0.1/tp5/public/static/css/vendor/bootstrap/css/bootstrap.min.css.map [运行时间：0.015461s][吞吐率：64.68req/s] [内存消耗：1,247.53kb] [文件加载：37]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'vendor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'bootstrap' => 'css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-15T15:59:35+08:00 ] 127.0.0.1 GET /tp5/public/admin/index/news
+[ info ] 127.0.0.1/tp5/public/admin/index/news [运行时间：0.030162s][吞吐率：33.15req/s] [内存消耗：2,492.45kb] [文件加载：53]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/index/news',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->news[ /Applications/XAMPP/xamppfiles/htdocs/tp5/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/tp5/public/../application/admin/view/index/news.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'messnum',
+  3 => 'mess',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000481s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.002153s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.002064s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `is_see_role1` = 0 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT * FROM `news` ORDER BY time desc [ RunTime:0.000412s ]
+[ sql ] [ SQL ] UPDATE `news`  SET `is_see_role1`=1  WHERE  `is_operation` = 0  AND `is_see_role1` = 0 [ RunTime:0.000337s ]
+---------------------------------------------------------------
+[ 2018-06-15T15:59:35+08:00 ] 127.0.0.1 GET /tp5/public/static/css/vendor/bootstrap/css/bootstrap.min.css.map
+[ info ] 127.0.0.1/tp5/public/static/css/vendor/bootstrap/css/bootstrap.min.css.map [运行时间：0.013833s][吞吐率：72.29req/s] [内存消耗：1,247.53kb] [文件加载：37]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'vendor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'bootstrap' => 'css',
+)
+[ info ] [ LOG ] INIT File

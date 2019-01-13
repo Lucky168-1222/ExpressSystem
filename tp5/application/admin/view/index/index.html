@@ -1,0 +1,70 @@
+{include file='public/header' /}
+    <div id="page-wrapper" style="height:700px;">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">仪表数据</h1>
+            </div>
+            <!-- /.col-lg-12  ,'{admin}','{principal}','{normal}'-->
+        </div>
+        {if condition="$role eq 1"}
+        <form style="float: right;" action="{:url('tp5/public/admin/index/')}" method="post">
+            <select style="height: 30px;margin-left: 50px;width: 150px; margin-top: 20px;" name="selpoint" id="selpoint">
+                {if condition="$keyword eq ''"}
+                <option value="全部" selected>全部</option>
+                {else}
+                <option value="全部">全部</option>
+                {/if}
+                {volist name="point_list" id="one"}
+                {if condition="$keyword eq $one"}
+                <option value="{$one}" selected>{$one}</option>
+                {else}
+                <option value="{$one}">{$one}</option>
+                {/if}
+                {/volist}
+            </select>
+            <button type="submit" style="height: 30px;width: 50px; margin-top: 10px;">提交</button>
+        </form>
+        {elseif condition="$role eq 2"}
+        {else}
+        {/if}
+        <!-- -> where("isproexpress","=",0)-->
+        <div class="row" style="background-color: #f8f8f8;height: 140px;">
+            <table style="width: 80%;margin-left:60px;">
+                <tr>
+                    <td><h2>{$express_all}</h2></td>
+                    <td><h2 class="exall">{$express_ok}</h2></td>
+                    <td><h2 class="exing">{$express_ing}</h2></td>
+                    <td><h2 class="expro">{$express_ispro}</h2></td>
+                    <td><h2 class="emall">{$employee_all}</h2></td>
+                    <span class="emgao" style="display: none">{$admin}</span>
+                    <span class="empoint" style="display: none">{$principal}</span>
+                    <span class="em" style="display: none">{$normal}</span>
+                    {if condition="$role eq 1"}
+                    <td><h2>{$point_all}</h2></td>
+                    <td><h2>{$money_all}</h2> </td>
+                    {/if}
+                </tr>
+                <tr>
+                    <td><span>网点快件总数</span></td>
+                    <td><span>已完成快件数</span></td>
+                    <td><span>进行中快件数</span></td>
+                    <td><span>问题件数</span></td>
+                    <td><span>员工总数</span></td>
+                    {if condition="$role eq 1"}
+                    <td><span>网点总数</span></td>
+                    <td><span>总收入¥</span></td>
+                    {/if}
+                </tr>
+            </table>
+        </div>
+        <div style="overflow: auto;margin-top:20px;">
+             <div id="container" style="float:left;width:46%;min-width:400px;height:400px"></div>
+             <div id="emcontainner" style="float:right;width:46%;min-width:400px;height:400px"></div>
+        </div>
+    </div>
+</div>
+{include file='public/bottom' /}
+
+<?php echo "<script type='text/javascript'>ok();</script>"; ?>
+
+<?php echo "<script type='text/javascript'>w();</script>"; ?>

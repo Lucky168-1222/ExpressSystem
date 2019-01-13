@@ -1,0 +1,252 @@
+---------------------------------------------------------------
+[ 2018-06-19T08:10:39+08:00 ] 127.0.0.1 GET /tp5/public/admin/employee/addemployee
+[ info ] 127.0.0.1/tp5/public/admin/employee/addemployee [运行时间：0.238652s][吞吐率：4.19req/s] [内存消耗：2,712.27kb] [文件加载：54]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'addemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/express',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=e3e6c92f7681d02838dff74365ecb232',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->addemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/employee/addemployee.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'messnum',
+  3 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000332s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.015331s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` IS NULL LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] select name from point WHERE name!='超级网点' [ RunTime:0.000254s ]
+---------------------------------------------------------------
+[ 2018-06-19T08:10:42+08:00 ] 127.0.0.1 GET /tp5/public/index/login
+[ info ] 127.0.0.1/tp5/public/index/login [运行时间：0.043921s][吞吐率：22.77req/s] [内存消耗：1,604.46kb] [文件加载：43]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/addemployee',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=e3e6c92f7681d02838dff74365ecb232',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ /opt/lampp/htdocs/tp5/application/index/controller/Login.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-19T08:10:47+08:00 ] 127.0.0.1 POST /tp5/public/index/login/dologin.html
+[ info ] 127.0.0.1/tp5/public/index/login/dologin.html [运行时间：0.080297s][吞吐率：12.45req/s] [内存消耗：2,427.20kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '32',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=e3e6c92f7681d02838dff74365ecb232',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'zhangsan',
+  'userpwd' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->doLogin[ /opt/lampp/htdocs/tp5/application/index/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000352s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.001227s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'zhangsan' LIMIT 1 [ RunTime:0.000729s ]
+---------------------------------------------------------------
+[ 2018-06-19T08:10:47+08:00 ] 127.0.0.1 POST /tp5/public/index/login/dologin.html
+[ info ] 127.0.0.1/tp5/public/index/login/dologin.html [运行时间：0.085231s][吞吐率：11.73req/s] [内存消耗：2,427.20kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '32',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=e3e6c92f7681d02838dff74365ecb232',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'zhangsan',
+  'userpwd' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->doLogin[ /opt/lampp/htdocs/tp5/application/index/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000299s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.001006s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'zhangsan' LIMIT 1 [ RunTime:0.000446s ]
+---------------------------------------------------------------
+[ 2018-06-19T08:10:47+08:00 ] 127.0.0.1 GET /tp5/public/admin.html
+[ info ] 127.0.0.1/tp5/public/admin.html [运行时间：0.144634s][吞吐率：6.91req/s] [内存消耗：2,501.02kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=e3e6c92f7681d02838dff74365ecb232; user_id=1014; username=zhangsan',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /opt/lampp/htdocs/tp5/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/index/index.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'messnum',
+  3 => 'point_list',
+  4 => 'username',
+  5 => 'express_all',
+  6 => 'express_ispro',
+  7 => 'employee_all',
+  8 => 'money_all',
+  9 => 'express_ok',
+  10 => 'express_ing',
+  11 => 'express_pro',
+  12 => 'admin',
+  13 => 'principal',
+  14 => 'normal',
+  15 => 'keyword',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000255s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'zhangsan' LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `point` = '北京海淀五路居店'  AND `is_see_role2` = 0  AND `has_permission_point` = 1 LIMIT 1 [ RunTime:0.063069s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `point` = '北京海淀五路居店'  AND `has_permission_point` = 1  AND `is_action` = 0  AND `is_operation` = 1 LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` [ RunTime:0.000146s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `express` [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `express` WHERE  `currentpoint` = '北京海淀五路居店' LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `express` WHERE  `currentpoint` = '北京海淀五路居店'  AND `isproexpress` = 1 LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `employee` WHERE  `point` = '北京海淀五路居店'  AND `isStay` = 1 LIMIT 1 [ RunTime:0.000718s ]
+[ sql ] [ SQL ] select sum(price) as money_all from express where status=4 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `express` WHERE  `currentpoint` = '北京海淀五路居店'  AND `isproexpress` = 0  AND `status` = 4 LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `employee` WHERE  `point` = '北京海淀五路居店'  AND `role` = 1 LIMIT 1 [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `employee` WHERE  `point` = '北京海淀五路居店'  AND `role` = 2 LIMIT 1 [ RunTime:0.000184s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `employee` WHERE  `point` = '北京海淀五路居店'  AND `role` = 3 LIMIT 1 [ RunTime:0.000237s ]
+---------------------------------------------------------------
+[ 2018-06-19T08:10:51+08:00 ] 127.0.0.1 GET /tp5/public/admin/employee/addemployee
+[ info ] 127.0.0.1/tp5/public/admin/employee/addemployee [运行时间：0.027787s][吞吐率：35.99req/s] [内存消耗：2,558.80kb] [文件加载：52]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'addemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=e3e6c92f7681d02838dff74365ecb232; user_id=1014; username=zhangsan',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->addemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/employee/addemployee.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'messnum',
+  3 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000264s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'zhangsan' LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `point` = '北京海淀五路居店'  AND `is_see_role2` = 0  AND `has_permission_point` = 1 LIMIT 1 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `point` = '北京海淀五路居店'  AND `has_permission_point` = 1  AND `is_action` = 0  AND `is_operation` = 1 LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] select name from point WHERE name!='超级网点' [ RunTime:0.000173s ]

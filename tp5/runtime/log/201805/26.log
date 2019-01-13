@@ -1,0 +1,4259 @@
+---------------------------------------------------------------
+[ 2018-05-26T00:10:30+08:00 ] 127.0.0.1 GET /tp5/public/admin/employee/changeemployee?id=1004
+[ info ] 127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004 [运行时间：0.030694s][吞吐率：32.58req/s] [内存消耗：2,521.37kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'changeemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1004',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->changeemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/employee/changeemployee.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000258s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `number` = 1004 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] select name from point [ RunTime:0.000116s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:10:32+08:00 ] 127.0.0.1 POST /tp5/public/admin/employee/changeemployee.html
+[ info ] 127.0.0.1/tp5/public/admin/employee/changeemployee.html [运行时间：0.026331s][吞吐率：37.98req/s] [内存消耗：2,471.47kb] [文件加载：53]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'changeemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '325',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'number' => '1004',
+  'emuser' => '张三',
+  'emposition' => '2',
+  'emname' => '1212',
+  'emtel' => '123456',
+  'emtelbackup' => '12123453453',
+  'emamail' => '1212@163.com',
+  'embirth' => '',
+  'emadress' => '123123 13七十多万所',
+  'selpoint' => '北京海淀五路居店',
+  'emstarttime' => '2018-05-21',
+  'emisworking' => '0',
+  'emendtime' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->changeemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000406s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.002174s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT `role` FROM `employee` WHERE  `name` = '张三' [ RunTime:0.000168s ]
+[ error ] [8]未定义数组下标: 0[/opt/lampp/htdocs/tp5/application/admin/controller/Employee.php:160]
+---------------------------------------------------------------
+[ 2018-05-26T00:10:45+08:00 ] 127.0.0.1 GET /tp5/public/admin/employee/changeemployee?id=1004
+[ info ] 127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004 [运行时间：0.028474s][吞吐率：35.12req/s] [内存消耗：2,521.37kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'changeemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1004',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->changeemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/employee/changeemployee.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000266s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `number` = 1004 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] select name from point [ RunTime:0.000119s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:10:48+08:00 ] 127.0.0.1 POST /tp5/public/admin/employee/changeemployee.html
+[ info ] 127.0.0.1/tp5/public/admin/employee/changeemployee.html [运行时间：0.031294s][吞吐率：31.96req/s] [内存消耗：2,471.47kb] [文件加载：53]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'changeemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '325',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'number' => '1004',
+  'emuser' => '张三',
+  'emposition' => '2',
+  'emname' => '1212',
+  'emtel' => '123456',
+  'emtelbackup' => '12123453453',
+  'emamail' => '1212@163.com',
+  'embirth' => '',
+  'emadress' => '123123 13七十多万所',
+  'selpoint' => '北京海淀五路居店',
+  'emstarttime' => '2018-05-21',
+  'emisworking' => '0',
+  'emendtime' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->changeemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001132s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.001538s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT `role` FROM `employee` WHERE  `name` = '张三' [ RunTime:0.000213s ]
+[ error ] [8]未定义数组下标: 0[/opt/lampp/htdocs/tp5/application/admin/controller/Employee.php:160]
+---------------------------------------------------------------
+[ 2018-05-26T00:10:57+08:00 ] 127.0.0.1 POST /tp5/public/admin/employee/changeemployee.html
+[ info ] 127.0.0.1/tp5/public/admin/employee/changeemployee.html [运行时间：0.028228s][吞吐率：35.43req/s] [内存消耗：2,471.47kb] [文件加载：53]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'changeemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '325',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'number' => '1004',
+  'emuser' => '张三',
+  'emposition' => '2',
+  'emname' => '1212',
+  'emtel' => '123456',
+  'emtelbackup' => '12123453453',
+  'emamail' => '1212@163.com',
+  'embirth' => '',
+  'emadress' => '123123 13七十多万所',
+  'selpoint' => '北京海淀五路居店',
+  'emstarttime' => '2018-05-21',
+  'emisworking' => '0',
+  'emendtime' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->changeemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000571s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000808s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT `role` FROM `employee` WHERE  `name` = '张三' [ RunTime:0.000163s ]
+[ error ] [8]未定义数组下标: 0[/opt/lampp/htdocs/tp5/application/admin/controller/Employee.php:161]
+---------------------------------------------------------------
+[ 2018-05-26T00:11:01+08:00 ] 127.0.0.1 GET /tp5/public/admin/employee/changeemployee?id=1004
+[ info ] 127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004 [运行时间：0.031446s][吞吐率：31.80req/s] [内存消耗：2,521.37kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'changeemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1004',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->changeemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/employee/changeemployee.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000297s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `number` = 1004 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] select name from point [ RunTime:0.000123s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:11:02+08:00 ] 127.0.0.1 POST /tp5/public/admin/employee/changeemployee.html
+[ info ] 127.0.0.1/tp5/public/admin/employee/changeemployee.html [运行时间：0.035164s][吞吐率：28.44req/s] [内存消耗：2,471.47kb] [文件加载：53]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'changeemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '325',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'number' => '1004',
+  'emuser' => '张三',
+  'emposition' => '2',
+  'emname' => '1212',
+  'emtel' => '123456',
+  'emtelbackup' => '12123453453',
+  'emamail' => '1212@163.com',
+  'embirth' => '',
+  'emadress' => '123123 13七十多万所',
+  'selpoint' => '北京海淀五路居店',
+  'emstarttime' => '2018-05-21',
+  'emisworking' => '0',
+  'emendtime' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->changeemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000251s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT `role` FROM `employee` WHERE  `name` = '张三' [ RunTime:0.000166s ]
+[ error ] [8]未定义数组下标: 0[/opt/lampp/htdocs/tp5/application/admin/controller/Employee.php:161]
+---------------------------------------------------------------
+[ 2018-05-26T00:11:08+08:00 ] 127.0.0.1 POST /tp5/public/admin/employee/changeemployee.html
+[ info ] 127.0.0.1/tp5/public/admin/employee/changeemployee.html [运行时间：0.026431s][吞吐率：37.83req/s] [内存消耗：2,365.53kb] [文件加载：47]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'changeemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '325',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'number' => '1004',
+  'emuser' => '张三',
+  'emposition' => '2',
+  'emname' => '1212',
+  'emtel' => '123456',
+  'emtelbackup' => '12123453453',
+  'emamail' => '1212@163.com',
+  'embirth' => '',
+  'emadress' => '123123 13七十多万所',
+  'selpoint' => '北京海淀五路居店',
+  'emstarttime' => '2018-05-21',
+  'emisworking' => '0',
+  'emendtime' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->changeemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000334s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.001007s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SELECT `role` FROM `employee` WHERE  `name` = '张三' [ RunTime:0.000171s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:11:28+08:00 ] 127.0.0.1 POST /tp5/public/admin/employee/changeemployee.html
+[ info ] 127.0.0.1/tp5/public/admin/employee/changeemployee.html [运行时间：0.030368s][吞吐率：32.93req/s] [内存消耗：2,365.96kb] [文件加载：47]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'changeemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '325',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'number' => '1004',
+  'emuser' => '张三',
+  'emposition' => '2',
+  'emname' => '1212',
+  'emtel' => '123456',
+  'emtelbackup' => '12123453453',
+  'emamail' => '1212@163.com',
+  'embirth' => '',
+  'emadress' => '123123 13七十多万所',
+  'selpoint' => '北京海淀五路居店',
+  'emstarttime' => '2018-05-21',
+  'emisworking' => '0',
+  'emendtime' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->changeemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000250s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT `role` FROM `employee` WHERE  `loginname` = '张三' [ RunTime:0.000152s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:11:37+08:00 ] 127.0.0.1 POST /tp5/public/admin/employee/changeemployee.html
+[ info ] 127.0.0.1/tp5/public/admin/employee/changeemployee.html [运行时间：0.030367s][吞吐率：32.93req/s] [内存消耗：2,365.59kb] [文件加载：47]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'changeemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '325',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'number' => '1004',
+  'emuser' => '张三',
+  'emposition' => '2',
+  'emname' => '1212',
+  'emtel' => '123456',
+  'emtelbackup' => '12123453453',
+  'emamail' => '1212@163.com',
+  'embirth' => '',
+  'emadress' => '123123 13七十多万所',
+  'selpoint' => '北京海淀五路居店',
+  'emstarttime' => '2018-05-21',
+  'emisworking' => '0',
+  'emendtime' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->changeemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000268s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT `role` FROM `employee` WHERE  `loginname` = '张三' [ RunTime:0.000129s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:44:44+08:00 ] 127.0.0.1 POST /tp5/public/admin/employee/changeemployee.html
+[ info ] 127.0.0.1/tp5/public/admin/employee/changeemployee.html [运行时间：0.147650s][吞吐率：6.77req/s] [内存消耗：2,424.56kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'changeemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '325',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+  'number' => '1004',
+  'emuser' => '张三',
+  'emposition' => '2',
+  'emname' => '1212',
+  'emtel' => '123456',
+  'emtelbackup' => '12123453453',
+  'emamail' => '1212@163.com',
+  'embirth' => '',
+  'emadress' => '123123 13七十多万所',
+  'selpoint' => '北京海淀五路居店',
+  'emstarttime' => '2018-05-21',
+  'emisworking' => '0',
+  'emendtime' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->changeemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'code',
+  3 => 'msg',
+  4 => 'data',
+  5 => 'url',
+  6 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000274s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000916s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` IS NULL LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT `role` FROM `employee` WHERE  `loginname` = '张三' [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT `principal` FROM `point` WHERE  `name` = '北京海淀五路居店' [ RunTime:0.000179s ]
+[ sql ] [ SQL ] UPDATE `employee`  SET `loginname`='张三',`role`=2,`name`='1212',`phone`='123456',`phonebackup`='12123453453',`email`='1212@163.com',`birthday`='',`address`='123123 13七十多万所',`point`='北京海淀五路居店',`jointime`='2018-05-21',`isStay`=0,`leavetime`=''  WHERE  `number` = 1004 [ RunTime:0.118469s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:44:45+08:00 ] 127.0.0.1 GET /tp5/public/admin/employee
+[ info ] 127.0.0.1/tp5/public/admin/employee [运行时间：0.024163s][吞吐率：41.39req/s] [内存消耗：2,547.29kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/changeemployee.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->index[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/employee/index.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'word',
+  4 => 'serole',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000246s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` IS NULL LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` <> 'admin' [ RunTime:0.000214s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:44:47+08:00 ] 127.0.0.1 GET /tp5/public/index/login
+[ info ] 127.0.0.1/tp5/public/index/login [运行时间：0.016351s][吞吐率：61.16req/s] [内存消耗：1,601.52kb] [文件加载：42]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ /opt/lampp/htdocs/tp5/application/index/controller/Login.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-26T00:44:51+08:00 ] 127.0.0.1 POST /tp5/public/index/login/dologin.html
+[ info ] 127.0.0.1/tp5/public/index/login/dologin.html [运行时间：0.030764s][吞吐率：32.51req/s] [内存消耗：2,422.81kb] [文件加载：50]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '27',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'userpwd' => '1234',
+)
+[ info ] [ RUN ] app\index\controller\Login->doLogin[ /opt/lampp/htdocs/tp5/application/index/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000243s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000341s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:44:51+08:00 ] 127.0.0.1 GET /tp5/public/admin.html
+[ info ] 127.0.0.1/tp5/public/admin.html [运行时间：0.067517s][吞吐率：14.81req/s] [内存消耗：2,415.82kb] [文件加载：50]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /opt/lampp/htdocs/tp5/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/index/index.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000768s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000276s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:44:53+08:00 ] 127.0.0.1 GET /tp5/public/admin/point
+[ info ] 127.0.0.1/tp5/public/admin/point [运行时间：0.032166s][吞吐率：31.09req/s] [内存消耗：2,517.90kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'point',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Point->index[ /opt/lampp/htdocs/tp5/application/admin/controller/Point.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/point/index.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'word',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000295s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT * FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000200s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:44:56+08:00 ] 127.0.0.1 GET /tp5/public/admin/employee
+[ info ] 127.0.0.1/tp5/public/admin/employee [运行时间：0.027544s][吞吐率：36.31req/s] [内存消耗：2,547.33kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/point',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->index[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/employee/index.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'word',
+  4 => 'serole',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000249s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` <> 'admin' [ RunTime:0.000186s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:44:59+08:00 ] 127.0.0.1 GET /tp5/public/admin/employee/changeemployee?id=1004
+[ info ] 127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004 [运行时间：0.031005s][吞吐率：32.25req/s] [内存消耗：2,534.33kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'changeemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1004',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->changeemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/employee/changeemployee.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000320s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `number` = 1004 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] select name from point [ RunTime:0.000121s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:45:09+08:00 ] 127.0.0.1 POST /tp5/public/admin/employee/changeemployee.html
+[ info ] 127.0.0.1/tp5/public/admin/employee/changeemployee.html [运行时间：0.030302s][吞吐率：33.00req/s] [内存消耗：2,484.74kb] [文件加载：53]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'changeemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '329',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'number' => '1004',
+  'emuser' => 'zhangsan',
+  'emposition' => '2',
+  'emname' => '张三',
+  'emtel' => '123456',
+  'emtelbackup' => '12123453453',
+  'emamail' => '1212@163.com',
+  'embirth' => '',
+  'emadress' => '123123 13七十多万所',
+  'selpoint' => '北京海淀五路居店',
+  'emstarttime' => '2018-05-21',
+  'emisworking' => '0',
+  'emendtime' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->changeemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000259s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT `role` FROM `employee` WHERE  `loginname` = 'zhangsan' [ RunTime:0.000252s ]
+[ error ] [8]未定义数组下标: 0[/opt/lampp/htdocs/tp5/application/admin/controller/Employee.php:160]
+---------------------------------------------------------------
+[ 2018-05-26T00:45:16+08:00 ] 127.0.0.1 POST /tp5/public/admin/employee/changeemployee.html
+[ info ] 127.0.0.1/tp5/public/admin/employee/changeemployee.html [运行时间：0.028650s][吞吐率：34.90req/s] [内存消耗：2,484.74kb] [文件加载：53]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'changeemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '329',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'number' => '1004',
+  'emuser' => 'zhangsan',
+  'emposition' => '2',
+  'emname' => '张三',
+  'emtel' => '123456',
+  'emtelbackup' => '12123453453',
+  'emamail' => '1212@163.com',
+  'embirth' => '',
+  'emadress' => '123123 13七十多万所',
+  'selpoint' => '北京海淀五路居店',
+  'emstarttime' => '2018-05-21',
+  'emisworking' => '0',
+  'emendtime' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->changeemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000538s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000875s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT `role` FROM `employee` WHERE  `loginname` = 'zhangsan' [ RunTime:0.000284s ]
+[ error ] [8]未定义数组下标: 0[/opt/lampp/htdocs/tp5/application/admin/controller/Employee.php:160]
+---------------------------------------------------------------
+[ 2018-05-26T00:45:21+08:00 ] 127.0.0.1 POST /tp5/public/admin/employee/changeemployee.html
+[ info ] 127.0.0.1/tp5/public/admin/employee/changeemployee.html [运行时间：0.034049s][吞吐率：29.37req/s] [内存消耗：2,484.74kb] [文件加载：53]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'changeemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '329',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'number' => '1004',
+  'emuser' => 'zhangsan',
+  'emposition' => '2',
+  'emname' => '张三',
+  'emtel' => '123456',
+  'emtelbackup' => '12123453453',
+  'emamail' => '1212@163.com',
+  'embirth' => '',
+  'emadress' => '123123 13七十多万所',
+  'selpoint' => '北京海淀五路居店',
+  'emstarttime' => '2018-05-21',
+  'emisworking' => '1',
+  'emendtime' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->changeemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000293s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT `role` FROM `employee` WHERE  `loginname` = 'zhangsan' [ RunTime:0.000182s ]
+[ error ] [8]未定义数组下标: 0[/opt/lampp/htdocs/tp5/application/admin/controller/Employee.php:160]
+---------------------------------------------------------------
+[ 2018-05-26T00:46:23+08:00 ] 127.0.0.1 POST /tp5/public/admin/employee/changeemployee.html
+[ info ] 127.0.0.1/tp5/public/admin/employee/changeemployee.html [运行时间：0.253297s][吞吐率：3.95req/s] [内存消耗：2,426.66kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'changeemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '329',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'number' => '1004',
+  'emuser' => 'zhangsan',
+  'emposition' => '2',
+  'emname' => '张三',
+  'emtel' => '123456',
+  'emtelbackup' => '12123453453',
+  'emamail' => '1212@163.com',
+  'embirth' => '',
+  'emadress' => '123123 13七十多万所',
+  'selpoint' => '北京海淀五路居店',
+  'emstarttime' => '2018-05-21',
+  'emisworking' => '1',
+  'emendtime' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->changeemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'code',
+  3 => 'msg',
+  4 => 'data',
+  5 => 'url',
+  6 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000261s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT `role` FROM `employee` WHERE  `number` = 1004 [ RunTime:0.000188s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT `principal` FROM `point` WHERE  `name` = '北京海淀五路居店' [ RunTime:0.000167s ]
+[ sql ] [ SQL ] UPDATE `point`  SET `principal`='选择负责人'  WHERE  `principal` = '张三' [ RunTime:0.000522s ]
+[ sql ] [ SQL ] UPDATE `point`  SET `principal`='张三'  WHERE  `name` = '北京海淀五路居店' [ RunTime:0.122449s ]
+[ sql ] [ SQL ] UPDATE `employee`  SET `loginname`='zhangsan',`role`=2,`name`='张三',`phone`='123456',`phonebackup`='12123453453',`email`='1212@163.com',`birthday`='',`address`='123123 13七十多万所',`point`='北京海淀五路居店',`jointime`='2018-05-21',`isStay`=1,`leavetime`=''  WHERE  `number` = 1004 [ RunTime:0.098630s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:46:25+08:00 ] 127.0.0.1 GET /tp5/public/admin/employee
+[ info ] 127.0.0.1/tp5/public/admin/employee [运行时间：0.031115s][吞吐率：32.14req/s] [内存消耗：2,547.43kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/changeemployee.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->index[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/employee/index.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'word',
+  4 => 'serole',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000268s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` <> 'admin' [ RunTime:0.000159s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:46:28+08:00 ] 127.0.0.1 GET /tp5/public/admin/employee/changeemployee?id=1004
+[ info ] 127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004 [运行时间：0.028901s][吞吐率：34.60req/s] [内存消耗：2,534.34kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'changeemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1004',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->changeemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/employee/changeemployee.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000289s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `number` = 1004 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] select name from point [ RunTime:0.000149s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:46:30+08:00 ] 127.0.0.1 GET /tp5/public/admin/employee/index
+[ info ] 127.0.0.1/tp5/public/admin/employee/index [运行时间：0.030519s][吞吐率：32.77req/s] [内存消耗：2,547.56kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->index[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/employee/index.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'word',
+  4 => 'serole',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000281s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` <> 'admin' [ RunTime:0.000235s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:52:02+08:00 ] 127.0.0.1 GET /tp5/public/admin/employee/changeemployee?id=1004
+[ info ] 127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004 [运行时间：0.031040s][吞吐率：32.22req/s] [内存消耗：2,534.34kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'changeemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1004',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->changeemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/employee/changeemployee.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000259s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.001655s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `number` = 1004 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] select name from point [ RunTime:0.000104s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:52:12+08:00 ] 127.0.0.1 GET /tp5/public/admin/employee/index
+[ info ] 127.0.0.1/tp5/public/admin/employee/index [运行时间：0.027676s][吞吐率：36.13req/s] [内存消耗：2,547.56kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->index[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/employee/index.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'word',
+  4 => 'serole',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000270s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000833s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` <> 'admin' [ RunTime:0.000202s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:52:52+08:00 ] 127.0.0.1 GET /tp5/public/admin/employee/index
+[ info ] 127.0.0.1/tp5/public/admin/employee/index [运行时间：0.029981s][吞吐率：33.35req/s] [内存消耗：2,547.89kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->index[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/employee/index.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'word',
+  4 => 'serole',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000341s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` <> 'admin' [ RunTime:0.000177s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:52:54+08:00 ] 127.0.0.1 GET /tp5/public/admin/employee/changeemployee?id=1004
+[ info ] 127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004 [运行时间：0.029514s][吞吐率：33.88req/s] [内存消耗：2,533.98kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'changeemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1004',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->changeemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/employee/changeemployee.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000255s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `number` = 1004 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] select name from point WHERE name!='超级网点' [ RunTime:0.000160s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:53:18+08:00 ] 127.0.0.1 GET /tp5/public/admin/employee/changeemployee?id=1004
+[ info ] 127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004 [运行时间：0.027496s][吞吐率：36.37req/s] [内存消耗：2,534.71kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'changeemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1004',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->changeemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/employee/changeemployee.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000339s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `number` = 1004 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] select name from point [ RunTime:0.000243s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:53:24+08:00 ] 127.0.0.1 GET /tp5/public/admin/employee
+[ info ] 127.0.0.1/tp5/public/admin/employee [运行时间：0.030355s][吞吐率：32.94req/s] [内存消耗：2,547.43kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->index[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/employee/index.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'word',
+  4 => 'serole',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000309s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000840s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` <> 'admin' [ RunTime:0.000247s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:53:30+08:00 ] 127.0.0.1 GET /tp5/public/admin/point
+[ info ] 127.0.0.1/tp5/public/admin/point [运行时间：0.030135s][吞吐率：33.18req/s] [内存消耗：2,517.95kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'point',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Point->index[ /opt/lampp/htdocs/tp5/application/admin/controller/Point.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/point/index.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'word',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000318s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT * FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000224s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:53:47+08:00 ] 127.0.0.1 GET /tp5/public/admin/point/addpoint
+[ info ] 127.0.0.1/tp5/public/admin/point/addpoint [运行时间：0.042162s][吞吐率：23.72req/s] [内存消耗：2,526.69kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'point',
+    2 => 'addpoint',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/point',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Point->addpoint[ /opt/lampp/htdocs/tp5/application/admin/controller/Point.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/point/addpoint.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'names',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000253s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT `name` FROM `employee` WHERE  `loginname` <> 'admin'  AND `role` = 2  AND `point` = '选择网点' [ RunTime:0.000175s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:54:22+08:00 ] 127.0.0.1 POST /tp5/public/admin/point/addpoint.html
+[ info ] 127.0.0.1/tp5/public/admin/point/addpoint.html [运行时间：0.407345s][吞吐率：2.45req/s] [内存消耗：2,415.79kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'point',
+    2 => 'addpoint',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '333',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/point/addpoint',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'pointname' => '郑州二七广场站',
+  'pointadress' => '郑州市中原区二七广场34号',
+  'selectp' => '19',
+  'selectc' => '1901',
+  'selectptext' => '河南',
+  'selectctext' => '郑州',
+  'pointperson' => '',
+  'pointtel' => '23542354',
+  'pointemail' => '25343@suyun.com',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Point->addpoint[ /opt/lampp/htdocs/tp5/application/admin/controller/Point.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'code',
+  3 => 'msg',
+  4 => 'data',
+  5 => 'url',
+  6 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000369s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.001088s ]
+[ sql ] [ SQL ] SELECT * FROM `point` WHERE  `name` = '郑州二七广场站' LIMIT 1 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SELECT * FROM `point` WHERE  `principal` = '' LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SELECT * FROM `point` WHERE  `name` = '23542354' LIMIT 1 [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SELECT * FROM `point` WHERE  `name` = '25343@suyun.com' LIMIT 1 [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SELECT `number` FROM `point` ORDER BY `number`  DESC [ RunTime:0.046908s ]
+[ sql ] [ SQL ] INSERT INTO `point` (`number` , `name` , `address` , `privince` , `city` , `phone` , `email` , `principal` , `createtime` , `updatetime`) VALUES (12 , '郑州二七广场站' , '郑州市中原区二七广场34号' , '河南' , '郑州' , '23542354' , '25343@suyun.com' , '' , '2018-05-26 00:54:22' , '2018-05-26 00:54:22') [ RunTime:0.328853s ]
+[ sql ] [ SQL ] UPDATE `employee`  SET `point`='郑州二七广场站',`role`=2,`updatetime`='2018-05-26 00:54:22'  WHERE  `name` = '' [ RunTime:0.000363s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:54:24+08:00 ] 127.0.0.1 GET /tp5/public/admin/point
+[ info ] 127.0.0.1/tp5/public/admin/point [运行时间：0.029673s][吞吐率：33.70req/s] [内存消耗：2,519.23kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'point',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/point/addpoint.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Point->index[ /opt/lampp/htdocs/tp5/application/admin/controller/Point.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/point/index.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'word',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000261s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT * FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000219s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:54:42+08:00 ] 127.0.0.1 GET /tp5/public/admin/point/changepoint?id=12
+[ info ] 127.0.0.1/tp5/public/admin/point/changepoint?id=12 [运行时间：0.029206s][吞吐率：34.24req/s] [内存消耗：2,534.01kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'point',
+    2 => 'changepoint',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/point',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Point->changepoint[ /opt/lampp/htdocs/tp5/application/admin/controller/Point.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/point/changepoint.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'names',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000265s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000794s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SELECT * FROM `point` WHERE  `number` = 12 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SELECT `name` FROM `employee` WHERE  `role` <> 1  AND `point` = '选择网点' [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SELECT `name` FROM `employee` WHERE  `role` = 3 [ RunTime:0.000143s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:55:57+08:00 ] 127.0.0.1 GET /tp5/public/admin/point/changepoint?id=12
+[ info ] 127.0.0.1/tp5/public/admin/point/changepoint?id=12 [运行时间：0.031210s][吞吐率：32.04req/s] [内存消耗：2,534.26kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'point',
+    2 => 'changepoint',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/point',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Point->changepoint[ /opt/lampp/htdocs/tp5/application/admin/controller/Point.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/point/changepoint.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'names',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000266s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT * FROM `point` WHERE  `number` = 12 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT `name` FROM `employee` WHERE  `role` = 2  AND `point` = '选择网点' [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SELECT `name` FROM `employee` WHERE  `role` = 3 [ RunTime:0.000164s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:55:59+08:00 ] 127.0.0.1 GET /tp5/public/admin/point/index
+[ info ] 127.0.0.1/tp5/public/admin/point/index [运行时间：0.031125s][吞吐率：32.13req/s] [内存消耗：2,519.38kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'point',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/point/changepoint?id=12',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Point->index[ /opt/lampp/htdocs/tp5/application/admin/controller/Point.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/point/index.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'word',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000341s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.001108s ]
+[ sql ] [ SQL ] SELECT * FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000632s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:56:06+08:00 ] 127.0.0.1 GET /tp5/public/index/logout
+[ info ] 127.0.0.1/tp5/public/index/logout [运行时间：0.061420s][吞吐率：16.28req/s] [内存消耗：1,604.73kb] [文件加载：43]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'logout',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/point/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\logout->index[ /opt/lampp/htdocs/tp5/application/index/controller/Logout.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-26T00:56:06+08:00 ] 127.0.0.1 GET /tp5/public/index.html
+[ info ] 127.0.0.1/tp5/public/index.html [运行时间：0.025576s][吞吐率：39.10req/s] [内存消耗：2,373.42kb] [文件加载：48]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/point/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /opt/lampp/htdocs/tp5/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/index/index.html [ array (
+  0 => 'mess',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000256s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT * FROM `company` [ RunTime:0.000213s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:56:07+08:00 ] 127.0.0.1 GET /tp5/public/index/login
+[ info ] 127.0.0.1/tp5/public/index/login [运行时间：0.019905s][吞吐率：50.24req/s] [内存消耗：1,601.56kb] [文件加载：42]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ /opt/lampp/htdocs/tp5/application/index/controller/Login.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-26T00:56:13+08:00 ] 127.0.0.1 POST /tp5/public/index/login/dologin.html
+[ info ] 127.0.0.1/tp5/public/index/login/dologin.html [运行时间：0.026257s][吞吐率：38.09req/s] [内存消耗：2,380.14kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '34',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'zhangsan',
+  'userpwd' => '12345678',
+)
+[ info ] [ RUN ] app\index\controller\Login->doLogin[ /opt/lampp/htdocs/tp5/application/index/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000590s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'zhangsan' LIMIT 1 [ RunTime:0.000255s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:56:24+08:00 ] 127.0.0.1 POST /tp5/public/index/login/dologin.html
+[ info ] 127.0.0.1/tp5/public/index/login/dologin.html [运行时间：0.028000s][吞吐率：35.71req/s] [内存消耗：2,422.96kb] [文件加载：50]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '32',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'zhangsan',
+  'userpwd' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->doLogin[ /opt/lampp/htdocs/tp5/application/index/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000264s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'zhangsan' LIMIT 1 [ RunTime:0.000289s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:56:25+08:00 ] 127.0.0.1 GET /tp5/public/admin.html
+[ info ] 127.0.0.1/tp5/public/admin.html [运行时间：0.025086s][吞吐率：39.86req/s] [内存消耗：2,415.85kb] [文件加载：50]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1004; username=zhangsan',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /opt/lampp/htdocs/tp5/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/index/index.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000265s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'zhangsan' LIMIT 1 [ RunTime:0.000292s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:56:29+08:00 ] 127.0.0.1 GET /tp5/public/admin/employee
+[ info ] 127.0.0.1/tp5/public/admin/employee [运行时间：0.029083s][吞吐率：34.38req/s] [内存消耗：2,547.35kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1004; username=zhangsan',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->index[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/employee/index.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'word',
+  4 => 'serole',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000524s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'zhangsan' LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` <> 'admin' [ RunTime:0.000158s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:56:34+08:00 ] 127.0.0.1 GET /tp5/public/admin/employee/changeemployee?id=1004
+[ info ] 127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004 [运行时间：0.028229s][吞吐率：35.42req/s] [内存消耗：2,534.88kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'changeemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1004; username=zhangsan',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1004',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->changeemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/employee/changeemployee.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000249s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'zhangsan' LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `number` = 1004 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] select name from point [ RunTime:0.000107s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:56:52+08:00 ] 127.0.0.1 GET /tp5/public/admin/employee/index
+[ info ] 127.0.0.1/tp5/public/admin/employee/index [运行时间：0.029497s][吞吐率：33.90req/s] [内存消耗：2,547.58kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/changeemployee?id=1004',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1004; username=zhangsan',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->index[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/employee/index.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'word',
+  4 => 'serole',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000263s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'zhangsan' LIMIT 1 [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` <> 'admin' [ RunTime:0.001168s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:56:56+08:00 ] 127.0.0.1 GET /tp5/public/index/logout
+[ info ] 127.0.0.1/tp5/public/index/logout [运行时间：0.015862s][吞吐率：63.04req/s] [内存消耗：1,604.73kb] [文件加载：43]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'logout',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1004; username=zhangsan',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\logout->index[ /opt/lampp/htdocs/tp5/application/index/controller/Logout.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-26T00:56:57+08:00 ] 127.0.0.1 GET /tp5/public/index.html
+[ info ] 127.0.0.1/tp5/public/index.html [运行时间：0.021064s][吞吐率：47.47req/s] [内存消耗：2,373.42kb] [文件加载：48]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1004; username=zhangsan',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /opt/lampp/htdocs/tp5/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/index/index.html [ array (
+  0 => 'mess',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000329s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000987s ]
+[ sql ] [ SQL ] SELECT * FROM `company` [ RunTime:0.000353s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:56:58+08:00 ] 127.0.0.1 GET /tp5/public/index/login
+[ info ] 127.0.0.1/tp5/public/index/login [运行时间：0.026557s][吞吐率：37.65req/s] [内存消耗：1,601.56kb] [文件加载：42]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1004; username=zhangsan',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ /opt/lampp/htdocs/tp5/application/index/controller/Login.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-26T00:57:00+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.030259s][吞吐率：33.05req/s] [内存消耗：2,420.06kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1004; username=zhangsan',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000271s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.001642s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000405s ]
+---------------------------------------------------------------
+[ 2018-05-26T00:57:00+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.033714s][吞吐率：29.66req/s] [内存消耗：2,419.40kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1004; username=zhangsan',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000395s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.001160s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000376s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:15:12+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.137073s][吞吐率：7.30req/s] [内存消耗：2,420.80kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1004; username=zhangsan',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000452s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.002045s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000548s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:15:12+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.035056s][吞吐率：28.53req/s] [内存消耗：2,419.88kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1004; username=zhangsan',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000454s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.002813s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000457s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:20:58+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.089579s][吞吐率：11.16req/s] [内存消耗：2,570.31kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1004; username=zhangsan',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000296s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.000974s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000275s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:20:58+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.029946s][吞吐率：33.39req/s] [内存消耗：2,421.92kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1004; username=zhangsan',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000541s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.001198s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000385s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:21:09+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.036443s][吞吐率：27.44req/s] [内存消耗：2,570.34kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1004; username=zhangsan',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000321s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000226s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:21:09+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.029165s][吞吐率：34.29req/s] [内存消耗：2,421.95kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1004; username=zhangsan',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000465s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.001061s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000429s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:21:31+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.029878s][吞吐率：33.47req/s] [内存消耗：2,570.34kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1004; username=zhangsan',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000263s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000229s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:21:31+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.024956s][吞吐率：40.07req/s] [内存消耗：2,421.95kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1004; username=zhangsan',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000362s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.001207s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000318s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:21:38+08:00 ] 127.0.0.1 GET /tp5/public/index/login
+[ info ] 127.0.0.1/tp5/public/index/login [运行时间：0.022937s][吞吐率：43.60req/s] [内存消耗：1,601.61kb] [文件加载：42]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1004; username=zhangsan',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ /opt/lampp/htdocs/tp5/application/index/controller/Login.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-26T01:21:42+08:00 ] 127.0.0.1 POST /tp5/public/index/login/dologin.html
+[ info ] 127.0.0.1/tp5/public/index/login/dologin.html [运行时间：0.027689s][吞吐率：36.12req/s] [内存消耗：2,422.91kb] [文件加载：50]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '27',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1004; username=zhangsan',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'userpwd' => '1234',
+)
+[ info ] [ RUN ] app\index\controller\Login->doLogin[ /opt/lampp/htdocs/tp5/application/index/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000269s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000255s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:21:42+08:00 ] 127.0.0.1 GET /tp5/public/admin.html
+[ info ] 127.0.0.1/tp5/public/admin.html [运行时间：0.034514s][吞吐率：28.97req/s] [内存消耗：2,415.82kb] [文件加载：50]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /opt/lampp/htdocs/tp5/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/index/index.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'username',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000854s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000792s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000664s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:21:44+08:00 ] 127.0.0.1 GET /tp5/public/admin/point
+[ info ] 127.0.0.1/tp5/public/admin/point [运行时间：0.023965s][吞吐率：41.73req/s] [内存消耗：2,519.18kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'point',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Point->index[ /opt/lampp/htdocs/tp5/application/admin/controller/Point.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/point/index.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'mess',
+  3 => 'word',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000803s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.001524s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000220s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:21:45+08:00 ] 127.0.0.1 GET /tp5/public/admin/point/addpoint
+[ info ] 127.0.0.1/tp5/public/admin/point/addpoint [运行时间：0.079726s][吞吐率：12.54req/s] [内存消耗：2,526.69kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'point',
+    2 => 'addpoint',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/point',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Point->addpoint[ /opt/lampp/htdocs/tp5/application/admin/controller/Point.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/point/addpoint.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'names',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000309s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT `name` FROM `employee` WHERE  `loginname` <> 'admin'  AND `role` = 2  AND `point` = '选择网点' [ RunTime:0.000189s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:21:56+08:00 ] 127.0.0.1 GET /tp5/public/admin/employee/addemployee
+[ info ] 127.0.0.1/tp5/public/admin/employee/addemployee [运行时间：0.026971s][吞吐率：37.08req/s] [内存消耗：2,531.95kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'employee',
+    2 => 'addemployee',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/point/addpoint',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Employee->addemployee[ /opt/lampp/htdocs/tp5/application/admin/controller/Employee.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/admin/view/employee/addemployee.html [ array (
+  0 => 'role',
+  1 => 'point',
+  2 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000271s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000917s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'admin' LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] select name from point WHERE name!='超级网点' [ RunTime:0.000231s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:21:59+08:00 ] 127.0.0.1 GET /tp5/public/index/logout
+[ info ] 127.0.0.1/tp5/public/index/logout [运行时间：0.019665s][吞吐率：50.85req/s] [内存消耗：1,604.73kb] [文件加载：43]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'logout',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/addemployee',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\logout->index[ /opt/lampp/htdocs/tp5/application/index/controller/Logout.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-26T01:21:59+08:00 ] 127.0.0.1 GET /tp5/public/index.html
+[ info ] 127.0.0.1/tp5/public/index.html [运行时间：0.025643s][吞吐率：39.00req/s] [内存消耗：2,373.42kb] [文件加载：48]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/admin/employee/addemployee',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /opt/lampp/htdocs/tp5/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/index/index.html [ array (
+  0 => 'mess',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000475s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `company` [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT * FROM `company` [ RunTime:0.000212s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:22:01+08:00 ] 127.0.0.1 GET /tp5/public/index/login
+[ info ] 127.0.0.1/tp5/public/index/login [运行时间：0.021421s][吞吐率：46.68req/s] [内存消耗：1,601.56kb] [文件加载：42]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ /opt/lampp/htdocs/tp5/application/index/controller/Login.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-26T01:22:02+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.026527s][吞吐率：37.70req/s] [内存消耗：2,422.62kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000260s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000229s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:22:03+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.036926s][吞吐率：27.08req/s] [内存消耗：2,421.95kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000373s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.001813s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.001550s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:22:47+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.034059s][吞吐率：29.36req/s] [内存消耗：2,569.98kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000923s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.001007s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000358s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:22:47+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.027352s][吞吐率：36.56req/s] [内存消耗：2,421.59kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000408s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.001439s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000345s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:23:26+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.030438s][吞吐率：32.85req/s] [内存消耗：2,422.67kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000293s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000232s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:23:26+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.035395s][吞吐率：28.25req/s] [内存消耗：2,421.76kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000412s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.001676s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000422s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:33:14+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.030097s][吞吐率：33.23req/s] [内存消耗：2,431.06kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000253s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000212s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:33:14+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.029799s][吞吐率：33.56req/s] [内存消耗：2,430.15kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000449s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.003840s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000525s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:34:54+08:00 ] 127.0.0.1 POST /tp5/public/index/regeister/index.html
+[ info ] 127.0.0.1/tp5/public/index/regeister/index.html [运行时间：0.020674s][吞吐率：48.37req/s] [内存消耗：1,562.55kb] [文件加载：42]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '284',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'loginname' => 'lisi',
+  'name' => '李四',
+  'phone' => '683256023',
+  'phonebackup' => '423423434',
+  'email' => '3242@suyun.com',
+  'birth' => '2018-05-14',
+  'address' => '河南省汝州市',
+  'role' => '3',
+  'point' => '郑州二七广场站',
+  'resubmit' => '提交',
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-26T01:35:27+08:00 ] 127.0.0.1 POST /tp5/public/index/regeister/index.html
+[ info ] 127.0.0.1/tp5/public/index/regeister/index.html [运行时间：0.021517s][吞吐率：46.47req/s] [内存消耗：1,562.55kb] [文件加载：42]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '284',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'loginname' => 'lisi',
+  'name' => '李四',
+  'phone' => '683256023',
+  'phonebackup' => '423423434',
+  'email' => '3242@suyun.com',
+  'birth' => '2018-05-14',
+  'address' => '河南省汝州市',
+  'role' => '3',
+  'point' => '郑州二七广场站',
+  'resubmit' => '提交',
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-26T01:35:37+08:00 ] 127.0.0.1 POST /tp5/public/index/regeister/index.html
+[ info ] 127.0.0.1/tp5/public/index/regeister/index.html [运行时间：0.019099s][吞吐率：52.36req/s] [内存消耗：1,495.38kb] [文件加载：38]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '284',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'loginname' => 'lisi',
+  'name' => '李四',
+  'phone' => '683256023',
+  'phonebackup' => '423423434',
+  'email' => '3242@suyun.com',
+  'birth' => '2018-05-14',
+  'address' => '河南省汝州市',
+  'role' => '3',
+  'point' => '郑州二七广场站',
+  'resubmit' => '提交',
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-26T01:36:22+08:00 ] 127.0.0.1 POST /tp5/public/index/regeister/index.html
+[ info ] 127.0.0.1/tp5/public/index/regeister/index.html [运行时间：0.073974s][吞吐率：13.52req/s] [内存消耗：1,495.38kb] [文件加载：38]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '284',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'loginname' => 'lisi',
+  'name' => '李四',
+  'phone' => '683256023',
+  'phonebackup' => '423423434',
+  'email' => '3242@suyun.com',
+  'birth' => '2018-05-09',
+  'address' => '河南省汝州市',
+  'role' => '3',
+  'point' => '郑州二七广场站',
+  'resubmit' => '提交',
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-26T01:39:46+08:00 ] 127.0.0.1 POST /tp5/public/index/regeister/index.html
+[ info ] 127.0.0.1/tp5/public/index/regeister/index.html [运行时间：0.479607s][吞吐率：2.09req/s] [内存消耗：2,416.35kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '284',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'loginname' => 'lisi',
+  'name' => '李四',
+  'phone' => '683256023',
+  'phonebackup' => '423423434',
+  'email' => '3242@suyun.com',
+  'birth' => '2018-05-09',
+  'address' => '河南省汝州市',
+  'role' => '3',
+  'point' => '郑州二七广场站',
+  'resubmit' => '提交',
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.195745s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.051741s ]
+[ sql ] [ SQL ] SELECT `number` FROM `employee` ORDER BY `number`  DESC [ RunTime:0.000319s ]
+[ error ] [8]未定义数组索引: brith[/opt/lampp/htdocs/tp5/application/index/controller/Regeister.php:54]
+---------------------------------------------------------------
+[ 2018-05-26T01:40:28+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.205512s][吞吐率：4.87req/s] [内存消耗：2,577.50kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000305s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.001199s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000266s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:40:28+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.034356s][吞吐率：29.11req/s] [内存消耗：2,429.11kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000606s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.002035s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.001173s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:40:46+08:00 ] 127.0.0.1 POST /tp5/public/index/regeister/index.html
+[ info ] 127.0.0.1/tp5/public/index/regeister/index.html [运行时间：0.066596s][吞吐率：15.02req/s] [内存消耗：1,561.36kb] [文件加载：42]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '191',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'loginname' => '',
+  'name' => '',
+  'phone' => '',
+  'phonebackup' => '',
+  'email' => '',
+  'birth' => '2018-05-10T12:12',
+  'address' => '',
+  'role' => '3',
+  'point' => '北京海淀五路居店',
+  'resubmit' => '提交',
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-26T01:40:57+08:00 ] 127.0.0.1 POST /tp5/public/index/regeister/index.html
+[ info ] 127.0.0.1/tp5/public/index/regeister/index.html [运行时间：0.030650s][吞吐率：32.63req/s] [内存消耗：2,416.23kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '228',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+  'loginname' => '1212',
+  'name' => '1212',
+  'phone' => '1212',
+  'phonebackup' => '1212',
+  'email' => '123456@cyan.com',
+  'birth' => '2018-05-10T12:12',
+  'address' => '1212',
+  'role' => '3',
+  'point' => '北京海淀五路居店',
+  'resubmit' => '提交',
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000313s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SELECT `number` FROM `employee` ORDER BY `number`  DESC [ RunTime:0.000190s ]
+[ error ] [8]未定义数组索引: brith[/opt/lampp/htdocs/tp5/application/index/controller/Regeister.php:54]
+---------------------------------------------------------------
+[ 2018-05-26T01:41:30+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.033088s][吞吐率：30.22req/s] [内存消耗：2,578.05kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000291s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000254s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:41:30+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.034203s][吞吐率：29.24req/s] [内存消耗：2,429.66kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0; user_id=1003; username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002548s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.001364s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000341s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:41:45+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.061899s][吞吐率：16.16req/s] [内存消耗：2,430.48kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000296s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000276s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:41:46+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.026159s][吞吐率：38.23req/s] [内存消耗：2,429.45kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000257s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000307s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:42:01+08:00 ] 127.0.0.1 POST /tp5/public/index/regeister/index.html
+[ info ] 127.0.0.1/tp5/public/index/regeister/index.html [运行时间：0.018720s][吞吐率：53.42req/s] [内存消耗：1,561.85kb] [文件加载：42]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '224',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+  'loginname' => '1212',
+  'name' => '1212',
+  'phone' => '123456',
+  'phonebackup' => '123456',
+  'email' => '123456@cyan.com',
+  'birth' => '2018-05-08',
+  'address' => '1212',
+  'role' => '3',
+  'point' => '北京海淀五路居店',
+  'resubmit' => '提交',
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-26T01:42:18+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.028846s][吞吐率：34.67req/s] [内存消耗：2,430.52kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000635s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000243s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:42:18+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.027024s][吞吐率：37.00req/s] [内存消耗：2,429.48kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000360s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.000999s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000419s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:42:52+08:00 ] 127.0.0.1 POST /tp5/public/index/regeister/index.html
+[ info ] 127.0.0.1/tp5/public/index/regeister/index.html [运行时间：0.028376s][吞吐率：35.24req/s] [内存消耗：2,416.84kb] [文件加载：51]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '282',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+  'loginname' => 'lisi',
+  'name' => '李四',
+  'phone' => '46534653',
+  'phonebackup' => '4236543',
+  'email' => '123456@cyan.com',
+  'birth' => '2018-05-01',
+  'address' => '河南省汝州',
+  'role' => '3',
+  'point' => '北京海淀五路居店',
+  'resubmit' => '提交',
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000345s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.001569s ]
+[ sql ] [ SQL ] SELECT `number` FROM `employee` ORDER BY `number`  DESC [ RunTime:0.000371s ]
+[ error ] [8]未定义数组索引: brith[/opt/lampp/htdocs/tp5/application/index/controller/Regeister.php:54]
+---------------------------------------------------------------
+[ 2018-05-26T01:43:08+08:00 ] 127.0.0.1 POST /tp5/public/index/regeister/index.html
+[ info ] 127.0.0.1/tp5/public/index/regeister/index.html [运行时间：0.351137s][吞吐率：2.85req/s] [内存消耗：2,351.55kb] [文件加载：47]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '282',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+  'loginname' => 'lisi',
+  'name' => '李四',
+  'phone' => '46534653',
+  'phonebackup' => '4236543',
+  'email' => '123456@cyan.com',
+  'birth' => '2018-05-01',
+  'address' => '河南省汝州',
+  'role' => '3',
+  'point' => '北京海淀五路居店',
+  'resubmit' => '提交',
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000264s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT `number` FROM `employee` ORDER BY `number`  DESC [ RunTime:0.000151s ]
+[ sql ] [ SQL ] INSERT INTO `employee` (`number` , `loginname` , `password` , `name` , `phone` , `phonebackup` , `email` , `birthday` , `address` , `point` , `jointime` , `isStay` , `role` , `updatetime` , `isformal`) VALUES (1005 , 'lisi' , '25d55ad283aa400af464c76d713c07ad' , '李四' , '46534653' , '4236543' , '123456@cyan.com' , '2018-05-01' , '河南省汝州' , '北京海淀五路居店' , '2018-05-26 01:43:07' , 1 , 3 , '2018-05-26 01:43:07' , 0) [ RunTime:0.322068s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:44:28+08:00 ] 127.0.0.1 POST /tp5/public/index/regeister/index.html
+[ info ] 127.0.0.1/tp5/public/index/regeister/index.html [运行时间：0.169077s][吞吐率：5.91req/s] [内存消耗：2,357.29kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '282',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+  'loginname' => 'lisi',
+  'name' => '李四',
+  'phone' => '46534653',
+  'phonebackup' => '4236543',
+  'email' => '123456@cyan.com',
+  'birth' => '2018-05-01',
+  'address' => '河南省汝州',
+  'role' => '3',
+  'point' => '北京海淀五路居店',
+  'resubmit' => '提交',
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000283s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SELECT `number` FROM `employee` ORDER BY `number`  DESC [ RunTime:0.000313s ]
+[ sql ] [ SQL ] INSERT INTO `employee` (`number` , `loginname` , `password` , `name` , `phone` , `phonebackup` , `email` , `birthday` , `address` , `point` , `jointime` , `isStay` , `role` , `updatetime` , `isformal`) VALUES (1006 , 'lisi' , '25d55ad283aa400af464c76d713c07ad' , '李四' , '46534653' , '4236543' , '123456@cyan.com' , '2018-05-01' , '河南省汝州' , '北京海淀五路居店' , '2018-05-26 01:44:28' , 1 , 3 , '2018-05-26 01:44:28' , 0) [ RunTime:0.140686s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:44:30+08:00 ] 127.0.0.1 GET /tp5/public/login/index
+[ info ] 127.0.0.1/tp5/public/login/index [运行时间：0.047100s][吞吐率：21.23req/s] [内存消耗：1,278.57kb] [文件加载：36]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-26T01:44:38+08:00 ] 127.0.0.1 GET /tp5/public/login/index
+[ info ] 127.0.0.1/tp5/public/login/index [运行时间：0.013410s][吞吐率：74.57req/s] [内存消耗：1,278.82kb] [文件加载：36]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-26T01:44:41+08:00 ] 127.0.0.1 POST /tp5/public/index/regeister/index.html
+[ info ] 127.0.0.1/tp5/public/index/regeister/index.html [运行时间：0.146122s][吞吐率：6.84req/s] [内存消耗：2,357.29kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '282',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+  'loginname' => 'lisi',
+  'name' => '李四',
+  'phone' => '46534653',
+  'phonebackup' => '4236543',
+  'email' => '123456@cyan.com',
+  'birth' => '2018-05-01',
+  'address' => '河南省汝州',
+  'role' => '3',
+  'point' => '北京海淀五路居店',
+  'resubmit' => '提交',
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000285s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.000797s ]
+[ sql ] [ SQL ] SELECT `number` FROM `employee` ORDER BY `number`  DESC [ RunTime:0.000203s ]
+[ sql ] [ SQL ] INSERT INTO `employee` (`number` , `loginname` , `password` , `name` , `phone` , `phonebackup` , `email` , `birthday` , `address` , `point` , `jointime` , `isStay` , `role` , `updatetime` , `isformal`) VALUES (1007 , 'lisi' , '25d55ad283aa400af464c76d713c07ad' , '李四' , '46534653' , '4236543' , '123456@cyan.com' , '2018-05-01' , '河南省汝州' , '北京海淀五路居店' , '2018-05-26 01:44:41' , 1 , 3 , '2018-05-26 01:44:41' , 0) [ RunTime:0.116674s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:44:44+08:00 ] 127.0.0.1 GET /tp5/public/index/login
+[ info ] 127.0.0.1/tp5/public/index/login [运行时间：0.049640s][吞吐率：20.15req/s] [内存消耗：1,601.52kb] [文件加载：42]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ /opt/lampp/htdocs/tp5/application/index/controller/Login.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-26T01:48:20+08:00 ] 127.0.0.1 GET /tp5/public/index/login
+[ info ] 127.0.0.1/tp5/public/index/login [运行时间：0.019420s][吞吐率：51.49req/s] [内存消耗：1,601.77kb] [文件加载：42]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ /opt/lampp/htdocs/tp5/application/index/controller/Login.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-26T01:48:22+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.081005s][吞吐率：12.34req/s] [内存消耗：2,430.52kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/login',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000281s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.055598s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000447s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:48:22+08:00 ] 127.0.0.1 GET /tp5/public/index/regeister
+[ info ] 127.0.0.1/tp5/public/index/regeister [运行时间：0.039358s][吞吐率：25.41req/s] [内存消耗：2,429.73kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/regeister/index.html [ array (
+  0 => 'points',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000383s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `point` [ RunTime:0.001485s ]
+[ sql ] [ SQL ] SELECT `name` FROM `point` WHERE  `name` <> '超级网点' [ RunTime:0.000413s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:48:37+08:00 ] 127.0.0.1 POST /tp5/public/index/regeister/index.html
+[ info ] 127.0.0.1/tp5/public/index/regeister/index.html [运行时间：0.026141s][吞吐率：38.25req/s] [内存消耗：2,326.48kb] [文件加载：50]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '271',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+  'loginname' => 'lisi',
+  'name' => '阿斯蒂芬',
+  'phone' => '34',
+  'phonebackup' => '23',
+  'email' => '123456@cyan.com',
+  'birth' => '2018-05-14',
+  'address' => '去玩儿',
+  'role' => '3',
+  'point' => '北京海淀五路居店',
+  'resubmit' => '提交',
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: passwd[/opt/lampp/htdocs/tp5/application/index/controller/Regeister.php:43]
+---------------------------------------------------------------
+[ 2018-05-26T01:48:56+08:00 ] 127.0.0.1 POST /tp5/public/index/regeister/index.html
+[ info ] 127.0.0.1/tp5/public/index/regeister/index.html [运行时间：0.086283s][吞吐率：11.59req/s] [内存消耗：2,390.81kb] [文件加载：49]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'regeister',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '271',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+  'loginname' => 'lisi',
+  'name' => '阿斯蒂芬',
+  'phone' => '34',
+  'phonebackup' => '23',
+  'email' => '123456@cyan.com',
+  'birth' => '2018-05-14',
+  'address' => '去玩儿',
+  'role' => '3',
+  'point' => '北京海淀五路居店',
+  'resubmit' => '提交',
+)
+[ info ] [ RUN ] app\index\controller\Regeister->index[ /opt/lampp/htdocs/tp5/application/index/controller/Regeister.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000271s ] mysql:host=127.0.0.1;port=3306;dbname=express;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `employee` [ RunTime:0.056872s ]
+[ sql ] [ SQL ] SELECT * FROM `employee` WHERE  `loginname` = 'lisi' LIMIT 1 [ RunTime:0.000293s ]
+---------------------------------------------------------------
+[ 2018-05-26T01:49:00+08:00 ] 127.0.0.1 GET /tp5/public/index/login
+[ info ] 127.0.0.1/tp5/public/index/login [运行时间：0.020675s][吞吐率：48.37req/s] [内存消耗：1,601.52kb] [文件加载：42]
+[ info ] [ LANG ] /opt/lampp/htdocs/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/tp5/public/index/regeister',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ee6543037211a7e7837870233b92df0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ /opt/lampp/htdocs/tp5/application/index/controller/Login.php ]
+[ info ] [ VIEW ] /opt/lampp/htdocs/tp5/public/../application/index/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File

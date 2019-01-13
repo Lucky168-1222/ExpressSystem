@@ -1,0 +1,31 @@
+# 启动 xampp
+sudo /opt/lampp/lampp start
+# 关闭 xampp
+sudo /opt/lampp/lampp stop
+
+http://yuninglovekefan.blog.sohu.com/149856987.html
+https://blog.csdn.net/imphp/article/details/17014321       phpmyadmin 终端链接mysql
+#####################################################################
+数据库表和对应的字段
+
+员工（employee）
+number（编号，添加员工时自动生成，从1000起）、loginname（用户名）、password（密码）、name（姓名）、phone（电话）、phonebackup（第二联系人）、email（邮箱）、birthday（生日）、address（住址）、pointid（所在网点编号）、jointime（入职时间）、leavetime（离职时间）、isStay（是否在职）、role（角色）、updatetime（信息更新时间）
+-----------
+员工角色分为：0：公司负责人（超管）、1：网点负责人、3：普通员工
+
+
+公司（company）
+number（编号）、name（公司名称）、inaddress（所在地址）、inprivince(省份)、incity（市）、regaddress（注册地址）、regprivince(注册省份)、regcity（注册市）、phone（电话）、email（邮箱）、principal（负责人）、createtime（创建时间）、updatetime（修改时间）、description（简介）、regmoney（注册资本）
+
+
+网点（point）
+number（编号，添加网点时自动生成，从999起，999网点只有超管一个人，为了方便数据库字段添加，999网点无实际意义）、name（网点名称）、address（地址）、privince(省份)、city（市）、phone（电话）、email（邮箱）、principal（负责人）、createtime（创建时间）、updatetime（信息更新时间）
+
+快件（express）
+number（编号、添加快件时自动生成）、expressnumber（订单编号）、postaddress（寄件地址）、receiveaddress（收件地址）、postname（寄件人）、receivename（收件人）、postphone（寄件人电话）、receivephone（收件人电话）、postpointid（寄件网点编号）、nextpointid（下一个网点编号）、posttime（寄件时间）、changetime（状态改变时间）、principalname（快件收编人）、price（运费）、status（状态）isproexpree（是否是问题件）
+
+快件流向
+number（编号，添加快件流向信息时自动生成）、expressnumber（快件编号）、pointid（网点编号）、status（状态）、changetime（状态改变时间）
+
+站内信表
+user（用户） action（进行了什么操作）  has2(网点负责人是否有权限查看该条信息) has3(普通员工是否有权限查看该条信息) addtimne（事件发生的时间） isread(站内信是否已经被读)

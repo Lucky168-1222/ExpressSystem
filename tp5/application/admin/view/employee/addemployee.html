@@ -1,0 +1,127 @@
+{include file='public/header' /}
+
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">员工管理</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a href="index.html">员工列表</a> >> <a href="#">新增员工</a>
+                </div>
+                <!-- /.panel-heading -->
+                <form role="form" method="post" action="{:url('employee/addemployee')}" name="addomployeeform">
+                    <div class="panel-body">
+                        <table width="100%" class="table table-striped table-bordered table-hover">
+                            <tbody>
+                            <tr>
+                                <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">员工用户名</td>
+                                <td style="background: #fff">
+                                    <input  class="emuser" name="emuser"  type="text" style="min-width: 230px;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">员工角色</td>
+                                <td style="background: #fff">
+                                    <select name="emposition" id="emposition" style="height: 28px;width: 150px">
+                                        <option value="3" selected>普通员工</option>
+                                        {if condition="$role eq 1"}
+                                        <option value="2">网点负责人</option>
+                                        <option value="1">超级管理员</option>                                        {else}
+                                        {/if}
+                                    </select>
+                                    <!--<input  class="emposition" name="emposition"  type="text" style="min-width: 230px;"/>-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">员工姓名</td>
+                                <td style="background: #fff">
+                                    <input  class="emname" name="emname"  type="text" style="min-width: 230px;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">员工电话</td>
+                                <td style="background: #fff"><input  class="emtel" name="emtel"  type="text" style="min-width: 230px;"/></td>
+                            </tr>
+                            <tr>
+                                <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">员工紧急联系</td>
+                                <td style="background: #fff"><input  class="emtelbackup" name="emtelbackup"  type="text" style="min-width: 230px;"/></td>
+                            </tr>
+                            <tr>
+                                <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">员工邮箱</td>
+                                <td style="background: #fff">
+                                    <input  class="ememail" name="emamail"  type="email" style="min-width: 230px;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">员工出生年月</td>
+                                <td style="background: #fff">
+                                    <input  class="embrith" name="embirth"  type="date" style="min-width: 230px;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">员工住址</td>
+                                <td style="background: #fff">
+                                    <input  class="emadress" name="emadress"  type="text" style="min-width: 230px;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">员工所在网点</td>
+                                <td style="background: #fff">
+                                    <select name="selpoint" id="selpoint" style="height: 28px;width: 150px">
+                                        {if condition="$role eq 1"}
+                                        <option value="选择网点" selected>选择网点</option>
+                                        {volist name="points" id="point"}
+                                        <option value={$point.name}>{$point.name}</option>
+                                        {/volist}
+                                        {else}
+                                        <option value={$point}>{$point}</option>
+                                        {/if}
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">员工入职时间</td>
+                                <td style="background: #fff">
+                                    <input  class="emstarttime" name="emstarttime"  type="date" style="min-width: 230px;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">员工在职情况</td>
+                                <td style="background: #fff">
+                                    <input  value="是" name="emisworking"  type="radio" checked/>是  &nbsp;&nbsp;
+                                    <input  value="否" name="emisworking"  type="radio"/>否
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background: #f5f5f5; width:30%;color: #337ab7; font-weight:600;">员工离职时间</td>
+                                <td style="background: #fff">
+                                    <input  class="emendtime" name="emendtime"  type="date" style="min-width: 230px;"/>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.panel-body -->
+                    <input type="submit" class="btn btn-success col-sm-2" style="display: inline-block; float: right;margin-right: 26%; margin-top:20px;margin-bottom: 20px; margin-left: 20px" />
+                </form>
+                <a style="color: #fff;" href="/tp5/public/admin/employee/index"><button class="btn btn-danger col-sm-offset-3 col-sm-2" style="margin-top:20px;margin-bottom: 20px;">取消</button></a>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+
+</div>
+
+
+
+</div>
+
+
+{include file='public/bottom' /}
